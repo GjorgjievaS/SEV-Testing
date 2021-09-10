@@ -21,8 +21,7 @@ public class Candidate {
     public Candidate() {
     }
 
-    public Candidate(Long id, String firstName, String lastName, Long numberOfVotes) {
-        this.id = id;
+    public Candidate(String firstName, String lastName, Long numberOfVotes) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.numberOfVotes = numberOfVotes;
