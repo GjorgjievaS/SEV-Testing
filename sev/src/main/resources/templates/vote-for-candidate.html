@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Vote</title>
+</head>
+<body>
+<h1>Vote for your candidate</h1>
+<form action="/vote" method="POST">
+    <th:block th:each="candidate : ${candidates}">
+        <label th:text="${candidate.getFirstName()}"></label>
+        <input type="radio" name="vote" th:value="${candidate.getId()}">
+        <br>
+    </th:block>
+    <input type="submit" placeholder="Submit">
+</form>
+</body>
+</html>
