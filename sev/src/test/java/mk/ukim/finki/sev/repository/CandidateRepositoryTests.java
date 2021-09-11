@@ -27,7 +27,7 @@ public class CandidateRepositoryTests {
 
         List<Candidate> candidates = this.candidateRepository.findAll();
 
-        Assert.assertEquals(candidates.size(), 3);
+        Assert.assertEquals(3, candidates.size() );
     }
 
     @Test
@@ -44,9 +44,9 @@ public class CandidateRepositoryTests {
 
         Assert.assertNotNull(candidate1FromDB);
 
-        Assert.assertEquals(candidate1FromDB.getFirstName(), candidate1.getFirstName());
-        Assert.assertEquals(candidate1FromDB.getLastName(), candidate1.getLastName());
-        Assert.assertEquals(candidate1FromDB.getNumberOfVotes(), candidate1.getNumberOfVotes());
+        Assert.assertEquals(candidate1.getFirstName(), candidate1FromDB.getFirstName());
+        Assert.assertEquals(candidate1.getLastName(), candidate1FromDB.getLastName());
+        Assert.assertEquals(candidate1.getNumberOfVotes(), candidate1FromDB.getNumberOfVotes());
     }
 
     @Test
@@ -63,7 +63,7 @@ public class CandidateRepositoryTests {
 
         List<Candidate> candidates = this.candidateRepository.findAll();
 
-        Assert.assertEquals(candidates.size(), 2);
+        Assert.assertEquals(2, candidates.size());
 
     }
 
@@ -81,7 +81,7 @@ public class CandidateRepositoryTests {
 
         List<Candidate> candidates = this.candidateRepository.findAll();
 
-        Assert.assertEquals(candidates.size(), 0);
+        Assert.assertEquals(0, candidates.size());
 
     }
 
@@ -104,7 +104,7 @@ public class CandidateRepositoryTests {
 
         List<Candidate> candidates = this.candidateRepository.findAll();
 
-        Assert.assertEquals(candidates.size(), 1);
+        Assert.assertEquals(1, candidates.size());
 
     }
 

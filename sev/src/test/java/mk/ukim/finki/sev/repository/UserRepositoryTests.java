@@ -48,7 +48,7 @@ public class UserRepositoryTests {
 
         List<User> candidates = this.userRepository.findAll();
 
-        Assert.assertEquals(candidates.size(), 3);
+        Assert.assertEquals(3, candidates.size());
     }
 
     @Test
@@ -85,11 +85,11 @@ public class UserRepositoryTests {
 
         Assert.assertNotNull(user1FromDB);
 
-        Assert.assertEquals(user1FromDB.getUsername(), user1.getUsername());
-        Assert.assertEquals(user1FromDB.getFirstName(), user1.getFirstName());
-        Assert.assertEquals(user1FromDB.getLastName(), user1.getLastName());
-        Assert.assertEquals(user1FromDB.getHasVoted(), user1.getHasVoted());
-        Assert.assertEquals(user1FromDB.getEmail(), user1.getEmail());
+        Assert.assertEquals(user1.getUsername(), user1FromDB.getUsername());
+        Assert.assertEquals(user1.getFirstName(), user1FromDB.getFirstName());
+        Assert.assertEquals(user1.getLastName(), user1FromDB.getLastName());
+        Assert.assertEquals(user1.getHasVoted(), user1FromDB.getHasVoted());
+        Assert.assertEquals(user1.getEmail(), user1FromDB.getEmail());
     }
 
     @Test
@@ -126,7 +126,7 @@ public class UserRepositoryTests {
 
         List<User> users = this.userRepository.findAll();
 
-        Assert.assertEquals(users.size(), 2);
+        Assert.assertEquals(2, users.size());
 
     }
 
@@ -164,7 +164,7 @@ public class UserRepositoryTests {
 
         List<User> users = this.userRepository.findAll();
 
-        Assert.assertEquals(users.size(), 0);
+        Assert.assertEquals(0, users.size());
 
     }
 
@@ -207,7 +207,7 @@ public class UserRepositoryTests {
 
         List<User> candidates = this.userRepository.findAll();
 
-        Assert.assertEquals(candidates.size(), 1);
+        Assert.assertEquals(1, candidates.size());
 
     }
 

@@ -50,7 +50,7 @@ public class RegisterController {
 
         String userEmail = email;
 
-        File folder = new File("C:\\Users\\gabri\\Desktop\\IB\\ClientCert");
+        File folder = new File("/home/user1/Desktop/SEV-Testing/ClientCertificates/");
         File [] files = folder.listFiles();
 
         String filePath = null;
