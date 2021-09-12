@@ -1,1 +1,4 @@
 mk/ukim/finki/sev/SevApplicationTests.class
+mk/ukim/finki/sev/selenium/BasePage.class
+mk/ukim/finki/sev/selenium/HomePageTest.class
+mk/ukim/finki/sev/selenium/HomePage.class

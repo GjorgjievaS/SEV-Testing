@@ -1,1 +1,4 @@
-/home/user1/Desktop/SEV/cert-email-sender/src/test/java/mk/ukim/finki/sev/SevApplicationTests.java
+/home/user1/Desktop/SEV-Testing/cert-email-sender/src/test/java/mk/ukim/finki/sev/selenium/HomePageTest.java
+/home/user1/Desktop/SEV-Testing/cert-email-sender/src/test/java/mk/ukim/finki/sev/selenium/BasePage.java
+/home/user1/Desktop/SEV-Testing/cert-email-sender/src/test/java/mk/ukim/finki/sev/SevApplicationTests.java
+/home/user1/Desktop/SEV-Testing/cert-email-sender/src/test/java/mk/ukim/finki/sev/selenium/HomePage.java
