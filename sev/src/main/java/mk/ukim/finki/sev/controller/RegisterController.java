@@ -1,5 +1,8 @@
 package mk.ukim.finki.sev.controller;
 
+import mk.ukim.finki.sev.exceptions.InvalidUsernameOrPasswordException;
+import mk.ukim.finki.sev.exceptions.PasswordsDoNotMatchException;
+import mk.ukim.finki.sev.exceptions.UsernameAlreadyExistsException;
 import mk.ukim.finki.sev.model.Role;
 import mk.ukim.finki.sev.model.User;
 import mk.ukim.finki.sev.repository.UserRepository;
@@ -44,9 +47,9 @@ public class RegisterController {
             @RequestParam String embg,
             @RequestParam String email,
             @RequestParam String firstname,
-            @RequestParam String lastname) throws MessagingException {
+            @RequestParam String lastname) throws MessagingException, InvalidUsernameOrPasswordException, UsernameAlreadyExistsException, PasswordsDoNotMatchException {
 
-        userService.register(embg,"test",firstname,lastname, Role.ROLE_VOTER,email);
+        userService.register(embg,"test", "test",firstname,lastname, Role.ROLE_VOTER,email);
 
         String userEmail = email;
 

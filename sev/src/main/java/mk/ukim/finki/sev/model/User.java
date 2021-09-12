@@ -123,4 +123,8 @@ public class User implements UserDetails {
     public void setHasVoted(Boolean hasVoted) {
         this.hasVoted = hasVoted;
     }
+
+    public Role getRole() {
+        return role;
+    }
 }
