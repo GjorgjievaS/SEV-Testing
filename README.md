@@ -1,3 +1,15 @@
+# Документација за тестовите на SEV апликациајта
+
+SEV системот се состои од две Spring Boot апликации: cert-email-sender и sev.
+
+Во sev апликацијата во пакетот test има JUnit тестови за repository и service слојот.
+
+Во cert-email-sender во пакетот тест има Selenium тестови.
+
+
+
+# Документација за SEV апликацијата
+
 # SEV - Secure E-Voting
 
 ## The system is using mutual X.509 authentication
