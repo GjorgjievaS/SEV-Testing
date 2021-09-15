@@ -34,14 +34,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/","/css/**","/img/**", "/js/**", "/webfonts/**", "/home", "/assets/**", "/register", "/products", "/api/**", "/auth/login", "/auth/logout").permitAll()
-                .antMatchers("/admin/**").hasRole("ADMIN")
-                .anyRequest()
-                .authenticated()
-                .and()
-                .x509()
-                .subjectPrincipalRegex("CN=(.*?)(?:,|$)")
-                .userDetailsService(this.userService);
+                .antMatchers("/","/css/**","/img/**", "/js/**", "/webfonts/**", "/home", "/assets/**", "/register", "/products", "/api/**", "/auth/login", "/auth/logout", "/api/candidate").permitAll()
+                .antMatchers("/admin/**").hasRole("ADMIN");
+//                .anyRequest()
+//                .authenticated()
+//                .and()
+//                .x509()
+//                .subjectPrincipalRegex("CN=(.*?)(?:,|$)")
+//                .userDetailsService(this.userService);
     }
 
     @Override
