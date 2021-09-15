@@ -1,8 +1,10 @@
-# Документација за тестовите на SEV апликациајта
+# Документација за тестовите за SEV апликациајта
 
 SEV системот се состои од две Spring Boot апликации: cert-email-sender и sev.
 
 Во sev апликацијата во пакетот test има JUnit тестови за repository и service слојот.
+
+Во sev апликацијата во пакетот test controller пакетот се наоѓаат тестови за REST controller.
 
 Во cert-email-sender во пакетот тест има Selenium тестови.
 
